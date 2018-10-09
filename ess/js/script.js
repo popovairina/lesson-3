@@ -53,19 +53,14 @@ document.addEventListener("DOMContentLoaded", function() {
 
     //Расчет уровня достатка
     function detectLevel(n) {
-        switch (n) {
-            case n < 100:
-                console.log('Минимальный уровень достатка');
-                break;
-            case n > 100 && n < 2000:
-                console.log('Средний уровень достатка');
-                break;
-            case n > 2000:
-                console.log('Высокий уровень достатка');
-                break;
-            default:
-                console.log('Что-то пошло не так');
-                break;
+        if (n < 100) {
+            console.log('Минимальный уровень достатка');
+        } else if (n > 100 && n < 2000) {
+            console.log('Средний уровень достатка');
+        } else if (n > 2000) {
+            console.log('Высокий уровень достатка');
+        } else {
+            console.log('Что-то пошло не так');
         }
     }
 

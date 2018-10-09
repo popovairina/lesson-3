@@ -1,6 +1,6 @@
 'use strict';
 
-let str = "урок-3-был слишком легким uyuy";
+let str = "урок-3-был слишком легким";
 
 // 1) Сделать так, чтобы строка начиналась с большой буквы
 
@@ -31,9 +31,9 @@ let aim = 'легким',
     wordPos = findPos(str, aim),
     word = str.slice(wordPos, wordPos + aim.length); // вырезает только нужное слово
 // console.log(word);
-console.log('3) ' + word.slice(0, -2) + 'оо'); // так можно?)
+console.log('3) ' + word.slice(0, -2) + 'о'); // так можно?)
 
-str = str.slice(0, wordPos) + str.substring(wordPos + word.length);
+// str = str.slice(0, wordPos) + str.substring(wordPos + word.length);
 console.log('3) ' + str);
 
 
